@@ -23,3 +23,25 @@ def main() = {
 }
 
 ```
+
+We can also use the test toolkit. For that, we can publish the test toolkit using:
+```
+scala-cli --power publish local --cross LiHaoyiToolkitTest.scala publish-conf.scala
+```
+
+Now, we can create a test and use it. 
+Make sure that the test file is having the extension `.test.scala` or it is placed under `test` directory for the toolkit to consider it as test source. Read more [here](https://scala-cli.virtuslab.org/docs/commands/test/#test-sources).
+
+A sample `CustomTest.test.scala` file:
+```
+//> using scala 3
+//> using test.toolkit com.yadavan88:0.1.0
+import utest._
+object CustomToolkitTest extends TestSuite {
+  val tests = Tests {
+    test("simple test") {
+      println("executing test... ")
+    }
+  }
+}
+```
