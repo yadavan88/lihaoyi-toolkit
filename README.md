@@ -1,5 +1,5 @@
-# lihaoyi-toolkit
-A sample toolkit using com-lihaoyi libraries
+# lihaoyi-toolkit 
+A sample custom [toolkit](https://docs.scala-lang.org/toolkit/introduction.html) using `com-lihaoyi` libraries
 
 
 As of now, this needs to be published locally. You can do it using the command:
